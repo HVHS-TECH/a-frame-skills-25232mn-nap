@@ -34,11 +34,11 @@ https://aframe.io/docs/1.1.0/primitives/a-cone.html
 Hmm. What 3D shape has four sides? 
 Stuck: ask Google and check the documentation...
 -->
-    <a-box 
+    <a-tetrahedron 
         position="-2 0 -5"
         color="orange"
         wireframe=true
-    ></a-box>
+    ></a-tetrahedron>
     
 <!--
 The purple shape looks odd. It looks a bit like a <hint> knot </hint>.
@@ -47,9 +47,13 @@ You will need to mess with it's attributes.
 
 Put it at position="10 -5 -30"
 -->
-
-    
+<a-torusKnot
+        position="10 -5 -30"
+        color="purple"
+        
+></a-torusKnot>
         </a-scene>
     </body>
+
 </html>
 
