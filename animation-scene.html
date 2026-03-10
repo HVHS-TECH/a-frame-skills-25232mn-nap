@@ -8,10 +8,11 @@
         <a-scene>
             <!-- Set the sky -->
             <a-sky color="black"></a-sky>
-            <a-cylinder
+            <a-cone
             color="yellow"
-            radius-bottom="10"
-            radius-top="1"
+            radius-bottom="0.1"
+            radius-top="0.5"
+            rotation="90"
             animation="
             property: position;
             from: 1 0 -10;
@@ -19,7 +20,7 @@
             dur: 1500;
             dir: alternate;
             loop: true;">
-            </a-cylinder>
+            </a-cone>
 
         </a-scene>
     </body>
