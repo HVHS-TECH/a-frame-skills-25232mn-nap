@@ -9,14 +9,21 @@
         
             <!-- Set the background -->
             <a-sky color="lightblue"></a-sky>   
-    
+            <a-box
+            position="10 15 -10"
+            width="10"
+            height="10"
+            ></a-box>    
             <!-- Moving Cylinder -->
             <a-cylinder color="blue" height="4"
                     top-radius="2" bottom-radius="2"
                     animation="
-                    property:
-                    from:
-                    to:
+                    property: position;
+                    from: -4 2 -22;
+                    to: 4 2 -8;
+                    dur: 3000;
+                    loop: true;
+                    dir: alternate
                     "
             ></a-cylinder>
          
@@ -28,7 +35,8 @@
             <!-- Walls -->
             <!-- Right Wall -->
             <a-box position="5 2 -15" height="4" width=".5"
-                    color="red" depth="16">
+                    color="red" depth="16"
+                ></a-box>
             </a-box>
             <!-- Left Wall -->
             <a-box position="-5 2 -15" height="4" width=".5"
