@@ -8,6 +8,18 @@
         <a-scene>
             <!-- Set the sky -->
             <a-sky color="black"></a-sky>
+            <a-cylinder
+            color="yellow"
+            radius-bottom="10"
+            radius-top="1"
+            animation="
+            property: position;
+            from: 1 0 -10;
+            to: 1 0 0;
+            dur: 1500;
+            dir: alternate;
+            loop: true;">
+            </a-cylinder>
 
         </a-scene>
     </body>
