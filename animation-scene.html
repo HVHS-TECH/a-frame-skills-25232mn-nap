@@ -12,22 +12,24 @@
             color="yellow"
             radius-bottom="0.1"
             radius-top="0.5"
-            rotation="90 0 0"
             height="2"
-            animation_rotation="
-            property: rotation;
-            from: 0 0 0;
-            to: 90 0 0;
-            dur: 1500;
-            dir: alternate;
-            loop: true;"
             animation="
             property: position;
             from: 1 0 -10;
             to: 1 0 0;
             dur: 1500;
             dir: alternate;
-            loop: true;">
+            loop: true;"
+            
+           animation__rotation="
+        property: rotation; 
+        from: 0 180 0;
+        to: 0 90 0; 
+        dur: 2000; 
+        loop: true; 
+        dir:alternate
+        "
+            >
             </a-cone>
 
         </a-scene>
